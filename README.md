@@ -155,3 +155,9 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 ***
 
 
+**Observed Limitations**
+- It has difficult with capturing temporal dynamics of a reference audio. That is probably due to a high compression rate by collapsing the temporal dimension to produce CLAP embeddings.
+- Uncommmon types of sound effect are difficult to produce variations for. That is probably because the dataset that the pretrained AudioLDM was trained on did not include much of those types.
+- Difficult to produce variations for sound effects with short length. This is because all the used training samples are 10s. This is the audio length bias problem I mentioned many times.
+
+
