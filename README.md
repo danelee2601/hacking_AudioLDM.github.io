@@ -51,17 +51,107 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 **Reference Audio:** (from Soundly)
 
 <audio controls>
-  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/car_passing.wav" type="audio/mpeg">
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/Voices, Baby, Newborn, Maternity Ward, Baby Crying.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
-**Text Description:** "The sound of a car passing."
+**Text Description:** "Voices, Baby, Newborn, Maternity Ward, Baby Crying" (= audio description of the Soundly sample)
 
 | Samples |
 | ------- |
-| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/car_passing/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/car_passing/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/car_passing/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Newborn, Maternity Ward, Baby Crying/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Newborn, Maternity Ward, Baby Crying/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Newborn, Maternity Ward, Baby Crying/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 
 ***
+
+
+**Reference Audio:** (from Soundly)
+
+<audio controls>
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/Voices, Baby, Laughing, Giggling.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+**Text Description:** "Voices, Baby, Laughing, Giggling" (= audio description of the Soundly sample)
+
+| Samples |
+| ------- |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Laughing, Giggling/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Laughing, Giggling/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Laughing, Giggling/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+
+***
+
+
+**Reference Audio:** (from Soundly)
+
+<audio controls>
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+**Text Description:** "Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt" (= audio description of the Soundly sample)
+
+| Samples |
+| ------- |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+
+***
+
+
+**Reference Audio:** (from Soundly)
+
+<audio controls>
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/Aircraft, Helicopter.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+**Text Description:** "Aircraft, Helicopter" (= audio description of the Soundly sample)
+
+| Samples |
+| ------- |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Aircraft, Helicopter/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Aircraft, Helicopter/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Aircraft, Helicopter/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+
+***
+
+
+**Reference Audio:** (from Soundly)
+
+<audio controls>
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+**Text Description:** "Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway" (= audio description of the Soundly sample)
+
+| Samples |
+| ------- |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+
+***
+
+**Reference Audio:** (from Soundly)
+
+<audio controls>
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/Cartoon, Animal, Duck, Quacks, Whistle.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+**Text Description:** "Cartoon, Animal, Duck, Quacks, Whistle" (= audio description of the Soundly sample)
+
+| Samples |
+| ------- |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Cartoon, Animal, Duck, Quacks, Whistle/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Cartoon, Animal, Duck, Quacks, Whistle/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Cartoon, Animal, Duck, Quacks, Whistle/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+
+***
+
 
