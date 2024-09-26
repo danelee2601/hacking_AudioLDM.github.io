@@ -5,7 +5,9 @@
 
 ## Introduction
 
-Welcome to the demo of our new method for Sound Effect Vector Search. This project aims to find the top **k** most similar sound effect files from the **Soundly database** based on a given audio file and/or text description. By providing both an audio reference and a text description, users can achieve the most accurate search results. However, the system is flexible and allows searches using either input individually.
+AudioLDM is a powerful tool designed to generate high-quality sound effects from either audio input or brief text descriptions. Leveraging the latest advancements in diffusion models and contrastive learning, AudioLDM provides a versatile solution for creating similar or enhanced versions of sound effects in a fast and efficient manner. This technology is particularly useful for sound designers, game developers, and content creators who need to generate unique audio clips that closely match existing sounds or specific descriptions.
+
+At the core of AudioLDM is the Latent Diffusion Model, which operates on compressed representations of sound. These representations are encoded using the CLAP (Contrastive Language-Audio Pretraining) model, which simultaneously processes both audio files and text descriptions. This dual encoding mechanism allows the system to capture the underlying semantics of a sound effect and its corresponding textual representation, making it capable of generating audio that is not only acoustically similar but also contextually relevant to the input.
 
 ## Method
 
