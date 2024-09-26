@@ -1,7 +1,7 @@
-# Sound Effect Vector Search Demo
+# Sound Effect Geneartion with Pretrained AudioLDM
 
 **Author:** Daesoo Lee  
-
+**Company:** HANCE
 
 ## Introduction
 
@@ -14,10 +14,10 @@ Welcome to the demo of our new method for Sound Effect Vector Search. This proje
   <img src="https://github.com/danelee2601/hacking_AudioLDM.github.io/blob/main/.img/audioldm_hacking.png?raw=true" alt="method" style="width: 100%;">
 </div>
 
-The method utilizes the pretrained AudioLDM, `audioldm_48k`, from [this Github repository](https://github.com/haoheliu/AudioLDM2). AudioLDM mainly conists of two models: a latent diffusion model (LDM) and a CLAP encoder (i.e., audio and text encoders). The main idea is to encode a query audio and text description via the CLAP encoders and conditionally generate a sound effect with the LDM.
+The method utilizes the pretrained AudioLDM, `audioldm_48k`, from [this Github repository](https://github.com/haoheliu/AudioLDM2). AudioLDM mainly conists of two models: a latent diffusion model (LDM) and a CLAP encoder (i.e., audio and text encoders). The main idea is to encode a query audio and/or text description via the CLAP encoders and conditionally generate a sound effect with the LDM.
 
 1. **Input Query**: The user provides:
-   - A **WAV file** containing a sound effect they wish to replicate, and
+   - A **WAV file** containing a sound effect they wish to replicate, and/or
    - A **brief text description** of the desired sound effect.
    
    Both inputs aim to produce a sound that closely matches the original file or description.
@@ -30,89 +30,36 @@ The method utilizes the pretrained AudioLDM, `audioldm_48k`, from [this Github r
 
 3. **Latent Diffusion Model**: Both the audio and text vectors are passed through a **Latent Diffusion Model**. This model generates variations of the original sound effect based on the provided input. The diffusion process iteratively refines the latent representations of the sound, ultimately producing a new audio signal.
 
-4. **Output**: the LDM generates an audio file that closely resembles the input sound and text description. 
+4. **Output**: the LDM generates an audio file that closely resembles the input sound and text description. The resulting sampling rate is 48k.
 
 
 **Tips**
 - `ddim_steps`: the larger value leads to better quality audio. It should be at least 200 to ensure ok-quality and maximum 500.
-- `n_candidate_gen_per_text`: the higher value results in better chance of producing higher quality audio.
+<!-- - `n_candidate_gen_per_text`: the higher value results in better chance of producing higher quality audio. -->
 - `guidance_scale`: 
 - `text_reliance_rate`: 
 
 ## Experiments
 
+The aim is to allow users to generate variations of a selected sound effect. Every sample in Soundly comes with text description, therefore the text data is free once the user selects an audio sample. Hence, the synthetic samples in this experiments are generated based on a Soundly sample with its text description.
+
 ## Experimental Results
-Below we present sample results from our system. Audio samples are provided to demonstrate the effectiveness of our search method.
 
-### A. User Input: Reference Audio + Text Description
 
-**Reference Audio:** (from the BBC sound effect library)
+**Reference Audio:** (from Soundly)
 
 <audio controls>
-  <source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/search_query/bicycle_bell.wav" type="audio/mpeg">
+  <source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/search_query/car_passing.wav" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
-**Text Description:** "The sound of a bicycle bell."
+**Text Description:** "The sound of a car passing."
 
 | Samples |
 | ------- |
-| <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND33601.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND33601.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/car_passing/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/car_passing/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
+| <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/car_passing/3.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 
+***
 
-<!-- | Rank | Similar Audio (from Soundly) |
-|------|---------------|
-| 1    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND33601.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 2    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND6604.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 3    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND6603.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 4    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND49674.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 5    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND7698.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> | -->
-
-
-### B. [Ablation Study] User Input: Reference Audio Only
-
-| Rank | Similar Audio (from Soundly) |
-|------|---------------|
-| 1    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND51961.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 2    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND51962.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 3    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND51960.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 4    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND59826.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 5    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND59824.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-
-
-### C. [Ablation Study] User Input: Text Description Only
-
-| Rank | Similar Audio (from Soundly) |
-|------|---------------|
-| 1    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND60566.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 2    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND33601.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 3    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND60565.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 4    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND33602.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 5    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND60571.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-
-
-
-
-
-
-## Additional Experimental Results
-
-**Reference Audio:** (from the Game of Thrones, episode "The Bells"; you can hear the dragon at 11s!)
-
-<audio controls>
-  <source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/search_query/bell_game_of_throne.wav" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-**Text Description:** "The sound of a church bell."
-
-NB! Even if there's some noise (e.g., dragon roaring) included in a reference audio sample, a text description will guide the search so that users get what they want.
-
-| Rank | Similar Audio (from Soundly) |
-|------|---------------|
-| 1    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND63543.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 2    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND80488.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 3    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND91714.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 4    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND37051.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
-| 5    | <audio controls><source src="https://github.com/danelee2601/audio_vector_search.github.io/raw/refs/heads/main/.audio/soundly_samples/SND93410.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
