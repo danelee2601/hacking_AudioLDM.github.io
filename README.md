@@ -43,7 +43,7 @@ The method utilizes the pretrained AudioLDM, `audioldm_48k`, from [this Github r
 
 ## Experiments
 
-The aim is to allow users to generate variations of a selected sound effect. Every sample in Soundly comes with text description, therefore the text data is free once the user selects an audio sample. Hence, the synthetic samples in this experiments are generated based on a Soundly sample with its text description.
+The aim is to allow users to generate variations of a selected sound effect. Every sample in Soundly comes with text description, therefore the text data is free once the user selects an audio sample. Hence, the synthetic samples in this experiments are generated based on Soundly samples with the corresponding text descriptions.
 
 ## Experimental Results
 
