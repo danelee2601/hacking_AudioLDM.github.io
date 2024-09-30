@@ -45,6 +45,17 @@ The method utilizes the pretrained AudioLDM, `audioldm_48k`, from [this Github r
 
 The aim is to allow users to generate variations of a selected sound effect. Every sample in Soundly comes with text description, therefore the text data is free once the user selects an audio sample. Hence, the synthetic samples in this experiments are generated based on Soundly samples with the corresponding text descriptions.
 
+<!-- The models continues to be updated, therefore there are multiple versions. The currently existing versions are:
+
+|    | Version 1    |  Version 2 |
+| -- | -- | -- |
+| Date | 27.09.2024 | 28.09.2024 |
+| Conditioning mechanism | using an interpolated embedding between text and audio CLAP embeddings as condition for the sampling.  | Triple classifier-free guidance: with 1,2) text and audio CLAP embeddings, and 3) (optional) negative text prompt. |
+
+The samples are from the latest version. -->
+
+
+
 ## Experimental Results
 
 
@@ -75,7 +86,7 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 
 **Text Description:** "Voices, Baby, Laughing, Giggling" (= audio description of the Soundly sample)
 
-| Samples |
+| Generated Samples |
 | ------- |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Laughing, Giggling/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Voices, Baby, Laughing, Giggling/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
@@ -93,7 +104,7 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 
 **Text Description:** "Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt" (= audio description of the Soundly sample)
 
-| Samples |
+| Generated Samples |
 | ------- |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Vehicles, Car, Pass By, Audi Q5, Fast Speed, Asphalt/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
@@ -111,7 +122,7 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 
 **Text Description:** "Aircraft, Helicopter" (= audio description of the Soundly sample)
 
-| Samples |
+| Generated Samples |
 | ------- |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Aircraft, Helicopter/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Aircraft, Helicopter/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
@@ -129,7 +140,7 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 
 **Text Description:** "Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway" (= audio description of the Soundly sample)
 
-| Samples |
+| Generated Samples |
 | ------- |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Alarms, Bell, Fire Alarm, Short Buzzes, Distant, Stairway/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
@@ -146,7 +157,7 @@ The aim is to allow users to generate variations of a selected sound effect. Eve
 
 **Text Description:** "Cartoon, Animal, Duck, Quacks, Whistle" (= audio description of the Soundly sample)
 
-| Samples |
+| Generated Samples |
 | ------- |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Cartoon, Animal, Duck, Quacks, Whistle/1.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
 | <audio controls><source src="https://github.com/danelee2601/hacking_AudioLDM.github.io/raw/refs/heads/main/.audio/generated_samples/Cartoon, Animal, Duck, Quacks, Whistle/2.wav" type="audio/mpeg">Your browser does not support the audio element.</audio> |
